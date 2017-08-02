@@ -2,7 +2,7 @@
 environment:
    matrix:
    # node.js
-   - nodejs_version
+   - nodejs_version: "6"
 
 # Install scripts. (runs after repo cloning)
 install:
@@ -17,7 +17,7 @@ test_scripts:
    - node --version
    - npm -- version
    # run tests
-   = npm test
+   - npm test
 
 # Don't actually build.
 build: off
